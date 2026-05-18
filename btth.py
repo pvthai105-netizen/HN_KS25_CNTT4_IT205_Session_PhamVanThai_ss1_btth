@@ -1,0 +1,21 @@
+import random
+
+number_random = random.randint(100, 999)
+patient_name = input("Nhập tên bệnh nhân:")
+sex = input("Nhập giới tính:")
+dob = int(input("Nhập năm sinh:"))
+phone = input("Nhập số điện thoại:")
+email = input("Nhập email:")
+symptom = input("Nhập triệu chứng ban đầu:")
+expense = float(input("Nhập chi phí khám:"))
+patient_id = "BN" + str(dob) + str(number_random)
+
+print("---THẺ BỆNH NHÂN---")
+print(f"Mã bệnh nhân: {patient_id}")
+print(f"Tên: {patient_name} (str)")
+print(f"Giới tính: {sex} (str)")
+print(f"Năm sinh: {dob}")
+print(f"Điện thoại: {phone}")
+print(f"Email: {email}")
+print(f"Triệu chứng: {symptom}")
+print(f"Chi phí: {expense} VND")
